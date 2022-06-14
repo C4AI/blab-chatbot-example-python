@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "http-websocket-demo"
+version = "0.1.0"
+description = ""
+authors = [""]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+websocket-client = "^1.3.2"
+Flask = "^2.1.2"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.3.0"
+darglint = "*"
+flake8 = "*"
+flake8-annotations = "*"
+flake8-docstrings = "*"
+flake8-bugbear = "*"
+python-lsp-server = { extras = ["all"], version = "*" }
+pyupgrade = "*"
+mypy = "^0.931"
+pre-commit = "^2.18.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
