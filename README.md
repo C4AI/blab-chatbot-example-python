@@ -1,4 +1,4 @@
-# BLAB Chatbot Example
+# BLAB Chatbot Example (Python)
 
 This repository contains a trivial implementation example of a chatbot
 that can be integrated with [BLAB Controller](../../../blab-controller).
