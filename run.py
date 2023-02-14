@@ -4,10 +4,7 @@
 
 from pathlib import Path
 from runpy import run_path
-from sys import path
 
 MODULE = "blab_chatbot_example_python"
 
-src_dir = Path(__file__).parent.resolve() / "src"
-path.append(str(src_dir))
-run_path(str(src_dir / MODULE))
+run_path(str(Path(__file__).parent.resolve() / "src" / MODULE))
