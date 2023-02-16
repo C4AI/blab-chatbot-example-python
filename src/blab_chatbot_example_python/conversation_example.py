@@ -9,13 +9,19 @@ from blab_chatbot_bot_client.data_structures import (
     Message,
 )
 
+from blab_chatbot_example_python.example_settings_format import BlabExampleClientSettings
+
 
 class ExampleWebSocketBotClientConversation(WebSocketBotClientConversation):
+
+    settings: BlabExampleClientSettings
+
     @overrides
     def on_connect(self):
+        greeting_text = self.settings.EXAMPLE_SETTINGS['GREETING_TEXT']
         greeting = OutgoingMessage(
             type=MessageType.TEXT,
-            text="Hello!",
+            text=greeting_text,
             local_id=self.generate_local_id(),
         )
         self.enqueue_message(greeting)
