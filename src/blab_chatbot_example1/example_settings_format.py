@@ -10,5 +10,4 @@ class ExampleSettings(TypedDict):
 
 @runtime_checkable
 class BlabExampleClientSettings(BlabBotClientSettings, Protocol):
-    BLAB_CONNECTION_SETTINGS: ExampleSettings
     EXAMPLE_SETTINGS: ExampleSettings

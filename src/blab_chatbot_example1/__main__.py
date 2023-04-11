@@ -2,6 +2,6 @@ from sys import argv
 
 from blab_chatbot_bot_client.cli import BlabBotClientArgParser
 
-from blab_chatbot_example_python.conversation_example import ExampleWebSocketBotClientConversation
+from blab_chatbot_example1.conversation_example import ExampleWebSocketBotClientConversation
 
 BlabBotClientArgParser(ExampleWebSocketBotClientConversation).parse_and_run(argv[1:])
