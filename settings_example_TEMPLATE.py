@@ -8,13 +8,12 @@ from typing import Any
 BLAB_CONNECTION_SETTINGS: dict[str, str | int] = {
 
     # address of the local HTTP server that the controller will connect to
-    # (it should be "127.0.0.1" to accept only local connections from the controller)
     "BOT_HTTP_SERVER_HOSTNAME": "127.0.0.1",
 
-    # port of the aforementioned server (any valid port)
+    # port of the aforementioned server
     "BOT_HTTP_SERVER_PORT": 25229,
 
-    # BLAB Controller address for WebSocket connections (it starts with ws:// or wss://)
+    # BLAB Controller address for WebSocket connections
     "BLAB_CONTROLLER_WS_URL": "ws://localhost:8000",
 
 }
